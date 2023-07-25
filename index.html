@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/ce9b0bff50.js" crossorigin="anonymous"></script>
+
     <!-- tailwind customs style -->
     <script>
         tailwind.config = {
@@ -22,6 +25,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color-primary': '#F85559',
                         
                     }
                 }
@@ -36,9 +40,46 @@
     </style>
 </head>
 
-<body class="font-lato">
+<body class="container mx-auto font-lato">
 
     <header>
+        <nav class="mt-6 mx-5 md:mx-auto">
+            <div class="lg:p-5 navbar rounded-full md:bg-color-primary flex">
+                <div class="navbar-center hidden md:flex lg:flex-1">
+                    <ul class="menu menu-horizontal lg:visible  text-base lg:text-lg text-white font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class=" md:mt-0 flex flex-1 lg:justify-center gap-1 lg:gap-3">
+                    <a href=""><img class=" w-3/4 md:w-auto" src="images/logo.png" alt="">
+                    </a>
+                    <a class=" text-2xl lg:text-4xl font-bold text-[#12121] lg:text-white" href="">Fruit Burst</a>
+                </div>
+                <div class=" md:flex md:flex-1 hidden  md:visible justify-end relative pr-5">
+                    <input class="input input-bordered rounded-full lg:w-auto" type="text" placeholder="Search here "/>
+                    <a href=""><i class="fa-solid fa-magnifying-glass text-2xl absolute top-3 right-8 font-semibold"></i></a>
+                </div>
+                <div class="dropdown dropdown-end md:hidden">
+                    <label tabindex="0" class=" m-1"><i class="fa-solid fa-bars text-xl "></i></label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 text-base text-white bg-color-primary rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                
+
+                
+            </div>
+            
+
+        </nav>
+
+        
 
     </header>
 
